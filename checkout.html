@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Glam by Jody - makeup, beauty products and beauty services.">
+<title>Checkout - Glam by Jody</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><h1>Glam by Jody</h1></header>
+<nav><ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="reviews.html">Reviews</a></li>
+<li><a href="sales.html">Sales</a></li>
+<li><a href="orders.html">Orders</a></li>
+<li><a href="checkout.html" class="active">Checkout (<span class="cart-count">0</span>)</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul></nav>
+<main><h2>Checkout</h2>
+<div class="cart-box"><h3>Your Cart</h3><div id="cart-list"></div><div id="cart-total" class="cart-total">Total: R0.00</div></div>
+<form id="checkout-form" class="checkout-form">
+<label for="name">Full Name</label><input id="name" type="text" placeholder="Full Name" required>
+<label for="email">Email</label><input id="email" type="email" placeholder="Email" required>
+<label for="address">Delivery Address</label><textarea id="address" placeholder="Delivery Address" required></textarea>
+<label for="payment">Payment Method</label><select id="payment" required><option value="">Select payment method</option><option>Cash on Delivery</option><option>Card</option><option>EFT</option></select>
+<button class="btn" type="submit">Place Order</button>
+</form>
+<div style="text-align:center"><button id="clear-cart" class="btn" style="background:#555" type="button">Clear Cart</button></div>
+</main>
+<footer><p>&copy; 2026 Glam by Jody. All rights reserved.</p></footer>
+<script src="js/script.js"></script>
+</body>
+</html>
