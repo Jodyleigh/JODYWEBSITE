@@ -1,30 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Glam by Jody - makeup, beauty products and beauty services.">
-<title>About - Glam by Jody</title>
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<header><h1>Glam by Jody</h1></header>
-<nav><ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="products.html">Products</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="gallery.html">Gallery</a></li>
-<li><a href="reviews.html">Reviews</a></li>
-<li><a href="sales.html">Sales</a></li>
-<li><a href="orders.html">Orders</a></li>
-<li><a href="checkout.html">Checkout (<span class="cart-count">0</span>)</a></li>
-<li><a href="about.html" class="active">About</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul></nav>
-<main><h2>About Glam by Jody</h2>
-<div class="contact-box"><p>Glam by Jody is a beauty brand focused on makeup, beauty services and quality beauty products.</p>
-<p>Our goal is to help every client feel confident, beautiful and ready for every special moment.</p></div></main>
-<footer><p>&copy; 2026 Glam by Jody. All rights reserved.</p></footer>
-<script src="js/script.js"></script>
-</body>
-</html>
+﻿<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About â€” LumiÃ¨re Beauty</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<!-- GLOBAL HEADER: sticky top navigation, brand, mobile toggle, and bag link -->
+<header><div class="container nav">
+<input class="nav-toggle" type="checkbox" id="nav-toggle">
+<a class="brand" href="index.html">LumiÃ¨re<span>.</span></a>
+<label class="menu-toggle" for="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+<nav class="nav-links" id="nav-links" aria-label="Main"><a href="index.html">Home</a><a href="products.html">Shop</a><a href="deals.html">Deals</a><a href="about.html" aria-current="page">About</a><a href="contact.html">Contact</a>
+<a href="login.html">Account</a>
+<a class="cart-btn" href="cart.html">Bag (<span data-count>0</span>)</a>
+</nav></div></header>
+
+<!-- ABOUT PAGE MAIN STORY SECTION -->
+<section><div class="container"><div class="head"><div class="eyebrow">Our story</div><h2>Made for every face</h2><p>LumiÃ¨re started in a Durban kitchen in 2019, mixing shades for friends who could never find a match.</p></div>
+<div class="split"><img src="images/bridal-look-2.jpg" alt="LumiÃ¨re artistry">
+<div><h3>Shade-first, always</h3><p>We build every base product in thirty shades from the start â€” never a pale launch with deeper tones added later once the reviews come in.</p>
+<h3>Formulas that behave</h3><p>Humid coastal mornings are our testing ground. If it slides, creases or oxidises here, it doesn't ship.</p>
+<h3>Kind by default</h3><p>Cruelty-free across the range, with refillable compacts on powders and palettes, and recyclable outer cartons.</p></div></div>
+<div class="stats"><div><b>40k+</b>customers</div><div><b>30</b>shades per base</div><div><b>2019</b>founded in Durban</div><div><b>100%</b>cruelty-free</div></div>
+</div></section>
+
+<!-- GLOBAL FOOTER: brand note and store policy text -->
+<footer><div class="container">
+<div class="brand brand-sm">LumiÃ¨re<span>.</span></div>
+<p>Free delivery over R750 Â· 30-day returns Â· Cruelty-free</p>
+<p class="fine">Demo storefront â€” prices, accounts and checkout are illustrative only.</p>
+</div></footer>
+</body></html>

@@ -1,36 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Glam by Jody - makeup, beauty products and beauty services.">
-<title>Products - Glam by Jody</title>
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<header><h1>Glam by Jody</h1></header>
-<nav><ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="products.html" class="active">Products</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="gallery.html">Gallery</a></li>
-<li><a href="reviews.html">Reviews</a></li>
-<li><a href="sales.html">Sales</a></li>
-<li><a href="orders.html">Orders</a></li>
-<li><a href="checkout.html">Checkout (<span class="cart-count">0</span>)</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul></nav>
-<main><h2>Beauty Products</h2>
-<div div class="product-grid">
-<div class="product-card"><img src="pic/lip combos copy.jpg"><h3>lipcombos</h3><p><s>R650</s> R455</p><button class="btn add-to-cart" data-item="lip combo" data-price="455">Add to Cart</button></div>
-<div class="product-card"><img src="pic/lip liner.jpg"><h3>lip liner</h3><p><s>R420</s> R294</p><button class="btn add-to-cart" data-item="lip liner" data-price="294">Add to Cart</button></div>
-</div class="product-card"><img src="pic/make up brushes.jpg"><h3>make up brushes</h3><p><s>R320</s> R150</p><button class="btn add-to-cart" data-item="make up brushes" data-price="150">Add to Cart</button></div>
-</div class="product-card"><img src="pic/setting spray.jpg"><h3>setting spray</h3><p><s>R300</s> R180</p><button class="btn add-to-cart" data-item="setting spray" data-price="180">Add to Cart</button></div>
-</div class="product-card"><img src="highlighter"><h3>highlighter</h3><p><s>R400</s> R350</p><button class="btn add-to-cart" data-item="highlighter" data-price="350">Add to Cart</button></div>
-</div class="product-card"><img src="foundation"><h3>foundation</h3><p><s>R500</s> R400</p><button class="btn add-to-cart" data-item="foundation" data-price="400">Add to Cart</button></div>
-</div></main>
-<footer><p>&copy; 2026 Glam by Jody. All rights reserved.</p></footer>
-<script src="js/script.js"></script>
-</body>
-</html>
+﻿<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shop â€” LumiÃ¨re Beauty</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<!-- GLOBAL HEADER: nav with responsive mobile toggle -->
+<header><div class="container nav">
+<input class="nav-toggle" type="checkbox" id="nav-toggle">
+<a class="brand" href="index.html">LumiÃ¨re<span>.</span></a>
+<label class="menu-toggle" for="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+<nav class="nav-links" id="nav-links" aria-label="Main"><a href="index.html">Home</a><a href="products.html" aria-current="page">Shop</a><a href="deals.html">Deals</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+<a href="login.html">Account</a>
+<a class="cart-btn" href="cart.html">Bag (<span data-count>0</span>)</a>
+</nav></div></header>
+
+<!-- SHOP CATALOGUE: filter chips and product cards -->
+<section><div class="container"><div class="head"><div class="eyebrow">Catalogue</div><h2>Shop All Makeup</h2><p>Sixteen products across base, eyes, lips, cheeks and tools.</p></div>
+<div class="chips"><button class="chip active" type="button">All</button><button class="chip" type="button">Cheeks</button><button class="chip" type="button">Concealer</button><button class="chip" type="button">Eyes</button><button class="chip" type="button">Foundation</button><button class="chip" type="button">Lips</button><button class="chip" type="button">Powder</button><button class="chip" type="button">Prep &amp; Set</button><button class="chip" type="button">Tools</button></div>
+<div class="grid">
+  <div class="card"><a class="ph" href="product-details.html?id=0"><img src="images/foudation-1.jpg" alt="Luminous Silk Foundation"></a><div class="body"><small>Foundation</small><h3><a href="product-details.html?id=0">Luminous Silk Foundation</a></h3><div class="price">R549</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=1"><img src="images/foudation-7.jpg" alt="Radiant Skin Tint"></a><div class="body"><small>Foundation</small><h3><a href="product-details.html?id=1">Radiant Skin Tint</a></h3><div class="price">R429</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=2"><img src="images/make-up-sponge-1.jpg" alt="Second Skin Concealer"></a><div class="body"><small>Concealer</small><h3><a href="product-details.html?id=2">Second Skin Concealer</a></h3><div class="price">R319</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=3"><img src="images/make-up-sponge-3.jpg" alt="Brightening Under-Eye Duo"></a><div class="body"><small>Concealer</small><h3><a href="product-details.html?id=3">Brightening Under-Eye Duo</a></h3><div class="price">R365</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=4"><img src="images/setting-spray-and-primer-1.jpg" alt="Soft Focus Loose Powder"></a><div class="body"><small>Powder</small><h3><a href="product-details.html?id=4">Soft Focus Loose Powder</a></h3><div class="price">R389</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=5"><img src="images/setting-spray-and-primer-2.jpg" alt="Velvet Blur Pressed Powder"></a><div class="body"><small>Powder</small><h3><a href="product-details.html?id=5">Velvet Blur Pressed Powder</a></h3><div class="price">R299</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=6"><img src="images/setting-spray-and-primer-3.jpg" alt="Petal Cream Blush"></a><div class="body"><small>Cheeks</small><h3><a href="product-details.html?id=6">Petal Cream Blush</a></h3><div class="price">R259</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=7"><img src="images/lip-combos-1.jpg" alt="Sunlit Powder Blush"></a><div class="body"><small>Cheeks</small><h3><a href="product-details.html?id=7">Sunlit Powder Blush</a></h3><div class="price">R279</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=8"><img src="images/lip-combos-2.jpg" alt="Matte Lip Combo Set"></a><div class="body"><small>Lips</small><h3><a href="product-details.html?id=8">Matte Lip Combo Set</a></h3><div class="price">R349</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=9"><img src="images/lip-combos-3.jpg" alt="Glossy Nude Lip Duo"></a><div class="body"><small>Lips</small><h3><a href="product-details.html?id=9">Glossy Nude Lip Duo</a></h3><div class="price">R289</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=10"><img src="images/lip-combos-9.jpg" alt="Nine-Pan Neutral Palette"></a><div class="body"><small>Eyes</small><h3><a href="product-details.html?id=10">Nine-Pan Neutral Palette</a></h3><div class="price">R589</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=11"><img src="images/lip-combos-10.jpg" alt="Sunset Shimmer Palette"></a><div class="body"><small>Eyes</small><h3><a href="product-details.html?id=11">Sunset Shimmer Palette</a></h3><div class="price">R629</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=12"><img src="images/make-up-designs-1.jpg" alt="Precision Brush Set"></a><div class="body"><small>Tools</small><h3><a href="product-details.html?id=12">Precision Brush Set</a></h3><div class="price">R900</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=13"><img src="images/make-up-designs-3.jpg" alt="Bounce Blending Sponge"></a><div class="body"><small>Tools</small><h3><a href="product-details.html?id=13">Bounce Blending Sponge</a></h3><div class="price">R139</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=14"><img src="images/brushes-1.jpg" alt="All-Day Setting Spray"></a><div class="body"><small>Prep &amp; Set</small><h3><a href="product-details.html?id=14">All-Day Setting Spray</a></h3><div class="price">R329</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=15"><img src="images/bridal-look-1.jpg" alt="Blurring Pore Primer"></a><div class="body"><small>Prep &amp; Set</small><h3><a href="product-details.html?id=15">Blurring Pore Primer</a></h3><div class="price">R359</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=16"><img src="images/bridal-look-2.jpg" alt="Glow Mist Serum"></a><div class="body"><small>Prep &amp; Set</small><h3><a href="product-details.html?id=16">Glow Mist Serum</a></h3><div class="price">R459</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=17"><img src="images/123456/blushes-1.jpg" alt="Blushes Collection 1"></a><div class="body"><small>Cheeks</small><h3><a href="product-details.html?id=17">Blushes Collection</a></h3><div class="price">R239</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=18"><img src="images/123456/blushes-2.jpg" alt="Blushes Collection 2"></a><div class="body"><small>Cheeks</small><h3><a href="product-details.html?id=18">Blushes Collection</a></h3><div class="price">R239</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=19"><img src="images/123456/blushes-4.jpg" alt="Blushes Collection 4"></a><div class="body"><small>Cheeks</small><h3><a href="product-details.html?id=19">Blushes Collection</a></h3><div class="price">R239</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=20"><img src="images/123456/blushes-5.jpg" alt="Blushes Collection 5"></a><div class="body"><small>Cheeks</small><h3><a href="product-details.html?id=20">Blushes Collection</a></h3><div class="price">R239</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=21"><img src="images/123456/blushes-6.jpg" alt="Blushes Collection 6"></a><div class="body"><small>Cheeks</small><h3><a href="product-details.html?id=21">Blushes Collection</a></h3><div class="price">R239</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=22"><img src="images/123456/blushes-7.jpg" alt="Blushes Collection 7"></a><div class="body"><small>Cheeks</small><h3><a href="product-details.html?id=22">Blushes Collection</a></h3><div class="price">R239</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=23"><img src="images/123456/blushes-8.jpg" alt="Blushes Collection 8"></a><div class="body"><small>Cheeks</small><h3><a href="product-details.html?id=23">Blushes Collection</a></h3><div class="price">R239</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=24"><img src="images/123456/blushes-9.jpg" alt="Blushes Collection 9"></a><div class="body"><small>Cheeks</small><h3><a href="product-details.html?id=24">Blushes Collection</a></h3><div class="price">R239</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=25"><img src="images/123456/blushes-10.jpg" alt="Blushes Collection 10"></a><div class="body"><small>Cheeks</small><h3><a href="product-details.html?id=25">Blushes Collection</a></h3><div class="price">R239</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=26"><img src="images/123456/blushes-11.jpg" alt="Blushes Collection 11"></a><div class="body"><small>Cheeks</small><h3><a href="product-details.html?id=26">Blushes Collection</a></h3><div class="price">R239</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=27"><img src="images/123456/blushes-12.jpg" alt="Blushes Collection 12"></a><div class="body"><small>Cheeks</small><h3><a href="product-details.html?id=27">Blushes Collection</a></h3><div class="price">R239</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=28"><img src="images/123456/brushes-3.jpg" alt="Brushes 3"></a><div class="body"><small>Tools</small><h3><a href="product-details.html?id=28">Brush Set</a></h3><div class="price">R349</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=29"><img src="images/123456/brushes-4.jpg" alt="Brushes 4"></a><div class="body"><small>Tools</small><h3><a href="product-details.html?id=29">Brush Set</a></h3><div class="price">R349</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=30"><img src="images/123456/concealer-1.jpg" alt="Concealer 1"></a><div class="body"><small>Concealer</small><h3><a href="product-details.html?id=30">Concealer Edit</a></h3><div class="price">R180</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=31"><img src="images/123456/concealer-3.jpg" alt="Concealer 3"></a><div class="body"><small>Concealer</small><h3><a href="product-details.html?id=31">Concealer Edit</a></h3><div class="price">R180</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=32"><img src="images/123456/concealer-4.jpg" alt="Concealer 4"></a><div class="body"><small>Concealer</small><h3><a href="product-details.html?id=32">Concealer Edit</a></h3><div class="price">R180</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=33"><img src="images/123456/concealer-5.jpg" alt="Concealer 5"></a><div class="body"><small>Concealer</small><h3><a href="product-details.html?id=33">Concealer Edit</a></h3><div class="price">R180</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=34"><img src="images/123456/concealer-6.jpg" alt="Concealer 6"></a><div class="body"><small>Concealer</small><h3><a href="product-details.html?id=34">Concealer Edit</a></h3><div class="price">R180</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=35"><img src="images/123456/concealer-7.jpg" alt="Concealer 7"></a><div class="body"><small>Concealer</small><h3><a href="product-details.html?id=35">Concealer Edit</a></h3><div class="price">R180</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=36"><img src="images/123456/eyeshadow-palette-1.jpg" alt="Eyeshadow Palette 1"></a><div class="body"><small>Eyes</small><h3><a href="product-details.html?id=36">Eyeshadow Palette</a></h3><div class="price">R520</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=37"><img src="images/123456/eyeshadow-palette-2.jpg" alt="Eyeshadow Palette 2"></a><div class="body"><small>Eyes</small><h3><a href="product-details.html?id=37">Eyeshadow Palette</a></h3><div class="price">R520</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=38"><img src="images/123456/eyeshadow-palette-4.jpg" alt="Eyeshadow Palette 4"></a><div class="body"><small>Eyes</small><h3><a href="product-details.html?id=38">Eyeshadow Palette</a></h3><div class="price">R520</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=39"><img src="images/123456/eyeshadow-palette-5.jpg" alt="Eyeshadow Palette 5"></a><div class="body"><small>Eyes</small><h3><a href="product-details.html?id=39">Eyeshadow Palette</a></h3><div class="price">R520</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=40"><img src="images/123456/eyeshadow-palette-6.jpg" alt="Eyeshadow Palette 6"></a><div class="body"><small>Eyes</small><h3><a href="product-details.html?id=40">Eyeshadow Palette</a></h3><div class="price">R520</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=41"><img src="images/123456/eyeshadow-palette-7.jpg" alt="Eyeshadow Palette 7"></a><div class="body"><small>Eyes</small><h3><a href="product-details.html?id=41">Eyeshadow Palette</a></h3><div class="price">R520</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=42"><img src="images/123456/eyeshadow-palette-8.jpg" alt="Eyeshadow Palette 8"></a><div class="body"><small>Eyes</small><h3><a href="product-details.html?id=42">Eyeshadow Palette</a></h3><div class="price">R520</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=43"><img src="images/123456/eyeshadow-palette-9.jpg" alt="Eyeshadow Palette 9"></a><div class="body"><small>Eyes</small><h3><a href="product-details.html?id=43">Eyeshadow Palette</a></h3><div class="price">R520</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=44"><img src="images/123456/eyeshadow-palette-10.jpg" alt="Eyeshadow Palette 10"></a><div class="body"><small>Eyes</small><h3><a href="product-details.html?id=44">Eyeshadow Palette</a></h3><div class="price">R520</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=45"><img src="images/123456/foudation-4.jpg" alt="Foundation 4"></a><div class="body"><small>Foundation</small><h3><a href="product-details.html?id=45">Foundation Drop</a></h3><div class="price">R410</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=46"><img src="images/123456/foudation-5.jpg" alt="Foundation 5"></a><div class="body"><small>Foundation</small><h3><a href="product-details.html?id=46">Foundation Drop</a></h3><div class="price">R410</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=47"><img src="images/123456/foudation-6.jpg" alt="Foundation 6"></a><div class="body"><small>Foundation</small><h3><a href="product-details.html?id=47">Foundation Drop</a></h3><div class="price">R410</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=48"><img src="images/123456/foudation-8.jpg" alt="Foundation 8"></a><div class="body"><small>Foundation</small><h3><a href="product-details.html?id=48">Foundation Drop</a></h3><div class="price">R410</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=49"><img src="images/123456/lip-combos-4.jpg" alt="Lip Combo 4"></a><div class="body"><small>Lips</small><h3><a href="product-details.html?id=49">Lip Combo</a></h3><div class="price">R290</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=50"><img src="images/123456/lip-combos-5.jpg" alt="Lip Combo 5"></a><div class="body"><small>Lips</small><h3><a href="product-details.html?id=50">Lip Combo</a></h3><div class="price">R290</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=51"><img src="images/123456/lip-combos-6.jpg" alt="Lip Combo 6"></a><div class="body"><small>Lips</small><h3><a href="product-details.html?id=51">Lip Combo</a></h3><div class="price">R290</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=52"><img src="images/123456/lip-combos-7.jpg" alt="Lip Combo 7"></a><div class="body"><small>Lips</small><h3><a href="product-details.html?id=52">Lip Combo</a></h3><div class="price">R290</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=53"><img src="images/123456/lip-combos-8.jpg" alt="Lip Combo 8"></a><div class="body"><small>Lips</small><h3><a href="product-details.html?id=53">Lip Combo</a></h3><div class="price">R290</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=54"><img src="images/123456/lip-combos-11.jpg" alt="Lip Combo 11"></a><div class="body"><small>Lips</small><h3><a href="product-details.html?id=54">Lip Combo</a></h3><div class="price">R290</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=55"><img src="images/123456/make-up-designs-2.jpg" alt="Make Up Design 2"></a><div class="body"><small>Tools</small><h3><a href="product-details.html?id=55">Beauty Tool</a></h3><div class="price">R160</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=56"><img src="images/123456/make-up-sponge-2.jpg" alt="Make Up Sponge 2"></a><div class="body"><small>Tools</small><h3><a href="product-details.html?id=56">Beauty Sponge</a></h3><div class="price">R99</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=57"><img src="images/123456/make-up-sponge-4.jpg" alt="Make Up Sponge 4"></a><div class="body"><small>Tools</small><h3><a href="product-details.html?id=57">Beauty Sponge</a></h3><div class="price">R99</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=58"><img src="images/123456/powder-3.jpg" alt="Powder 3"></a><div class="body"><small>Powder</small><h3><a href="product-details.html?id=58">Pressed Powder</a></h3><div class="price">R220</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=59"><img src="images/123456/powder-4.jpg" alt="Powder 4"></a><div class="body"><small>Powder</small><h3><a href="product-details.html?id=59">Pressed Powder</a></h3><div class="price">R220</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=60"><img src="images/123456/powder-5.jpg" alt="Powder 5"></a><div class="body"><small>Powder</small><h3><a href="product-details.html?id=60">Pressed Powder</a></h3><div class="price">R220</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=61"><img src="images/123456/powder-6.jpg" alt="Powder 6"></a><div class="body"><small>Powder</small><h3><a href="product-details.html?id=61">Pressed Powder</a></h3><div class="price">R220</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=62"><img src="images/123456/powder-7.jpg" alt="Powder 7"></a><div class="body"><small>Powder</small><h3><a href="product-details.html?id=62">Pressed Powder</a></h3><div class="price">R220</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=63"><img src="images/123456/setting-spray-and-primer-4.jpg" alt="Setting Spray 4"></a><div class="body"><small>Prep &amp; Set</small><h3><a href="product-details.html?id=63">Setting Mist</a></h3><div class="price">R280</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=64"><img src="images/123456/setting-spray-and-primer-6.jpg" alt="Setting Spray 6"></a><div class="body"><small>Prep &amp; Set</small><h3><a href="product-details.html?id=64">Setting Mist</a></h3><div class="price">R280</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=65"><img src="images/123456/setting-spray-and-primer-7.jpg" alt="Setting Spray 7"></a><div class="body"><small>Prep &amp; Set</small><h3><a href="product-details.html?id=65">Setting Mist</a></h3><div class="price">R280</div><button type="button">Add to bag</button></div></div>
+</div></div></section>
+
+<!-- GLOBAL FOOTER -->
+<footer><div class="container">
+<div class="brand brand-sm">LumiÃ¨re<span>.</span></div>
+<p>Free delivery over R750 Â· 30-day returns Â· Cruelty-free</p>
+<p class="fine">Demo storefront â€” prices, accounts and checkout are illustrative only.</p>
+</div></footer>
+</body></html>
+

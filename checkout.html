@@ -1,38 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Glam by Jody - makeup, beauty products and beauty services.">
-<title>Checkout - Glam by Jody</title>
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<header><h1>Glam by Jody</h1></header>
-<nav><ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="products.html">Products</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="gallery.html">Gallery</a></li>
-<li><a href="reviews.html">Reviews</a></li>
-<li><a href="sales.html">Sales</a></li>
-<li><a href="orders.html">Orders</a></li>
-<li><a href="checkout.html" class="active">Checkout (<span class="cart-count">0</span>)</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul></nav>
-<main><h2>Checkout</h2>
-<div class="cart-box"><h3>Your Cart</h3><div id="cart-list"></div><div id="cart-total" class="cart-total">Total: R0.00</div></div>
-<form id="checkout-form" class="checkout-form">
-<label for="name">Full Name</label><input id="name" type="text" placeholder="Full Name" required>
-<label for="email">Email</label><input id="email" type="email" placeholder="Email" required>
-<label for="address">Delivery Address</label><textarea id="address" placeholder="Delivery Address" required></textarea>
-<label for="payment">Payment Method</label><select id="payment" required><option value="">Select payment method</option><option>Cash on Delivery</option><option>Card</option><option>EFT</option></select>
-<button class="btn" type="submit">Place Order</button>
+﻿<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Checkout â€” LumiÃ¨re Beauty</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<!-- GLOBAL HEADER: brand, nav, and responsive mobile menu -->
+<header><div class="container nav">
+<input class="nav-toggle" type="checkbox" id="nav-toggle">
+<a class="brand" href="index.html">LumiÃ¨re<span>.</span></a>
+<label class="menu-toggle" for="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+<nav class="nav-links" id="nav-links" aria-label="Main"><a href="index.html">Home</a><a href="products.html">Shop</a><a href="deals.html">Deals</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+<a href="login.html">Account</a>
+<a class="cart-btn" href="cart.html">Bag (<span data-count>0</span>)</a>
+</nav></div></header>
+
+<!-- CHECKOUT PAGE: shipping form and order summary -->
+<section><div class="container"><div class="head"><div class="eyebrow">Almost there</div><h2>Checkout</h2></div>
+<div class="cart-wrap"><form class="form" id="checkout-form">
+<h3>Delivery details</h3>
+<div class="two"><label>First name<input required></label><label>Last name<input required></label></div>
+<label>Email<input type="email" required></label>
+<label>Phone<input type="tel" required></label>
+<label>Street address<input required></label>
+<div class="two"><label>City<input required></label><label>Postal code<input required></label></div>
+<h3>Payment</h3>
+<label>Card number<input required placeholder="4242 4242 4242 4242" inputmode="numeric"></label>
+<div class="two"><label>Expiry<input required placeholder="MM/YY"></label><label>CVV<input required placeholder="123" inputmode="numeric"></label></div>
+<label>Discount code<input id="code" placeholder="LUMIERE10"></label>
+<button class="btn btn-block" type="submit">Place order</button>
+<p class="fine-muted">Demo only â€” no payment is processed and no card details are stored or sent anywhere.</p>
 </form>
-<div style="text-align:center"><button id="clear-cart" class="btn" style="background:#555" type="button">Clear Cart</button></div>
-</main>
-<footer><p>&copy; 2026 Glam by Jody. All rights reserved.</p></footer>
-<script src="js/script.js"></script>
-</body>
-</html>
+<aside class="summary"><h3>Order summary</h3><div id="cart-lines" class="compact">
+  <div class="line"><img src="images/foudation-1.jpg" alt="Luminous Silk Foundation"><div><b>Luminous Silk Foundation</b><small>Foundation</small></div><span class="price">R549</span></div>
+  <div class="line"><img src="images/make-up-glam-1.jpg" alt="Petal Cream Blush"><div><b>Petal Cream Blush</b><small>Cheeks</small></div><span class="price">R259</span></div>
+</div>
+<div class="row"><span>Subtotal</span><span id="sub">R808</span></div>
+<div class="row"><span>Delivery</span><span id="ship">Free</span></div>
+<div class="row" id="disc-row"><span>Discount</span><span id="disc">-R80</span></div>
+<div class="row fw-500"><span>Total</span><span id="tot">R728</span></div>
+</aside></div></div></section>
+
+<!-- GLOBAL FOOTER -->
+<footer><div class="container">
+<div class="brand brand-sm">LumiÃ¨re<span>.</span></div>
+<p>Free delivery over R750 Â· 30-day returns Â· Cruelty-free</p>
+<p class="fine">Demo storefront â€” prices, accounts and checkout are illustrative only.</p>
+</div></footer>
+</body></html>
+

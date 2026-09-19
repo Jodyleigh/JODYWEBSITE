@@ -1,42 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Glam by Jody - makeup, beauty products and beauty services.">
-<title>Home - Glam by Jody</title>
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<header><h1>Glam by Jody</h1></header>
-<nav><ul>
-<li><a href="index.html" class="active">Home</a></li>
-<li><a href="products.html">Products</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="gallery.html">Gallery</a></li>
-<li><a href="reviews.html">Reviews</a></li>
-<li><a href="sales.html">Sales</a></li>
-<li><a href="orders.html">Orders</a></li>
-<li><a href="checkout.html">Checkout (<span class="cart-count">0</span>)</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul></nav>
-<main>
-<section class="hero">
-<h2>Beauty, Confidence & Glamour</h2>
-<p>Professional makeup, beauty services and carefully selected beauty products by Jody'lee.</p>
-<div class="hero-actions">
-<a class="btn" href="services.html">View Services</a>
-<a class="btn" href="products.html">Shop Products</a>
+﻿<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Makeup Store â€” LumiÃ¨re Beauty</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<!-- GLOBAL HEADER: site navigation and mobile menu toggle -->
+<header><div class="container nav">
+<input class="nav-toggle" type="checkbox" id="nav-toggle">
+<a class="brand" href="index.html">LumiÃ¨re<span>.</span></a>
+<label class="menu-toggle" for="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+<nav class="nav-links" id="nav-links" aria-label="Main"><a href="index.html" aria-current="page">Home</a><a href="products.html">Shop</a><a href="deals.html">Deals</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+<a href="login.html">Account</a>
+<a class="cart-btn" href="cart.html">Bag (<span data-count>0</span>)</a>
+</nav></div></header>
+
+<!-- HERO BANNER: featured seasonal messaging and primary call to action -->
+<div class="hero"><img src="images/cover-page-1.jpg" alt="LumiÃ¨re Beauty">
+<div class="hero-in"><div class="eyebrow">New Season Collection</div>
+<h1>Beauty that<br>feels like you.</h1>
+<p>Skin-loving formulas, buildable pigment and finishes that hold from morning meetings to midnight.</p>
+<a class="btn" href="products.html">Shop the edit</a></div></div>
+
+<!-- CATEGORY GRID: quick navigation to matching product collections -->
+<section id="categories"><div class="container"><div class="head"><div class="eyebrow">Browse</div><h2>Shop by Category</h2><p>From base to blush to the final mist â€” everything for a complete face.</p></div>
+<div class="grid"><a class="cat" href="products.html?cat=Foundation"><img src="images/foudation-1.jpg" alt="Foundation"><b>Foundation</b></a><a class="cat" href="products.html?cat=Lips"><img src="images/lip-combos-1.jpg" alt="Lips"><b>Lips</b></a><a class="cat" href="products.html?cat=Eyes"><img src="images/make-up-designs-1.jpg" alt="Eyes"><b>Eyes</b></a><a class="cat" href="products.html?cat=Cheeks"><img src="images/make-up-glam-1.jpg" alt="Cheeks"><b>Cheeks</b></a><a class="cat" href="products.html?cat=Tools"><img src="images/brushes-1.jpg" alt="Tools"><b>Tools</b></a><a class="cat" href="products.html?cat=Prep & Set"><img src="images/setting-spray-and-primer-1.jpg" alt="Prep & Set"><b>Prep & Set</b></a></div></div></section>
+
+<!-- BESTSELLERS: highlighted products for the main storefront sales section -->
+<section class="band"><div class="container"><div class="head"><div class="eyebrow">Bestsellers</div><h2>The Everyday Edit</h2><p>Eight pieces our customers reorder most.</p></div>
+<div class="grid">
+  <div class="card"><a class="ph" href="product-details.html?id=0"><img src="images/foudation-1.jpg" alt="Luminous Silk Foundation" loading="lazy" decoding="async"></a><div class="body"><small>Foundation</small><h3><a href="product-details.html?id=0">Luminous Silk Foundation</a></h3><div class="price">R549</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=1"><img src="images/foudation-7.jpg" alt="Radiant Skin Tint" loading="lazy" decoding="async"></a><div class="body"><small>Foundation</small><h3><a href="product-details.html?id=1">Radiant Skin Tint</a></h3><div class="price">R429</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=2"><img src="images/make-up-sponge-1.jpg" alt="Second Skin Concealer" loading="lazy" decoding="async"></a><div class="body"><small>Concealer</small><h3><a href="product-details.html?id=2">Second Skin Concealer</a></h3><div class="price">R319</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=3"><img src="images/make-up-sponge-3.jpg" alt="Brightening Under-Eye Duo" loading="lazy" decoding="async"></a><div class="body"><small>Concealer</small><h3><a href="product-details.html?id=3">Brightening Under-Eye Duo</a></h3><div class="price">R365</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=4"><img src="images/setting-spray-and-primer-1.jpg" alt="Soft Focus Loose Powder" loading="lazy" decoding="async"></a><div class="body"><small>Powder</small><h3><a href="product-details.html?id=4">Soft Focus Loose Powder</a></h3><div class="price">R389</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=5"><img src="images/setting-spray-and-primer-2.jpg" alt="Velvet Blur Pressed Powder" loading="lazy" decoding="async"></a><div class="body"><small>Powder</small><h3><a href="product-details.html?id=5">Velvet Blur Pressed Powder</a></h3><div class="price">R299</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=6"><img src="images/make-up-glam-1.jpg" alt="Petal Cream Blush" loading="lazy" decoding="async"></a><div class="body"><small>Cheeks</small><h3><a href="product-details.html?id=6">Petal Cream Blush</a></h3><div class="price">R259</div><button type="button">Add to bag</button></div></div>
+  <div class="card"><a class="ph" href="product-details.html?id=7"><img src="images/make-up-glam-2.jpg" alt="Sunlit Powder Blush" loading="lazy" decoding="async"></a><div class="body"><small>Cheeks</small><h3><a href="product-details.html?id=7">Sunlit Powder Blush</a></h3><div class="price">R279</div><button type="button">Add to bag</button></div></div>
 </div>
-</section>
-<div class="info-grid">
-<div class="info-card"><h3>💄 Makeup</h3><p>Beautiful looks for weddings, events and special occasions.</p></div>
-<div class="info-card"><h3>✨ Beauty</h3><p>Beauty treatments and products to help you feel confident.</p></div>
-<div class="info-card"><h3>🛍️ Shop</h3><p>Browse products and add your favourites to the cart.</p></div>
-</div>
-</main>
-<footer><p>&copy; 2026 Glam by Jody. All rights reserved.</p></footer>
-<script src="js/script.js"></script>
-</body>
-</html>
+<p class="cta-row"><a class="btn" href="products.html">View all 16 products</a></p></div></section>
+
+<!-- LOOKBOOK: user inspiration gallery for style references -->
+<section><div class="container"><div class="head"><div class="eyebrow">Inspiration</div><h2>Looks We Love</h2><p>Soft glam, bridal glow and bold graphic liner â€” recreated with the products above.</p></div>
+<div class="looks"><img src="images/make-up-glam-1.jpg" alt="Soft glam makeup look" loading="lazy" decoding="async"><img src="images/bridal-look-1.jpg" alt="Bridal makeup look" loading="lazy" decoding="async"><img src="images/make-up-designs-1.jpg" alt="Graphic liner look" loading="lazy" decoding="async"><img src="images/make-up-glam-2.jpg" alt="Evening glam look" loading="lazy" decoding="async"><img src="images/bridal-look-2.jpg" alt="Bridal glow look" loading="lazy" decoding="async"><img src="images/make-up-designs-2.jpg" alt="Creative eye design" loading="lazy" decoding="async"><img src="images/make-up-glam-3.jpg" alt="Glam makeup look" loading="lazy" decoding="async"><img src="images/make-up-designs-3.jpg" alt="Bold makeup design" loading="lazy" decoding="async"></div></div></section>
+
+<!-- CUSTOMER REVIEWS: social proof and testimonial content -->
+<section class="band"><div class="container"><div class="head"><div class="eyebrow">Reviews</div><h2>Loved by 40,000+</h2></div>
+<div class="quotes">
+<div class="quote"><div class="eyebrow">â˜…â˜…â˜…â˜…â˜…</div><p>â€œThe foundation sits beautifully on dry skin â€” no patching by the end of a shift.â€</p><small>Naledi M. Â· Verified buyer</small></div>
+<div class="quote"><div class="eyebrow">â˜…â˜…â˜…â˜…â˜…</div><p>â€œSetting spray survived a whole December wedding. Not one touch-up.â€</p><small>Priya S. Â· Verified buyer</small></div>
+<div class="quote"><div class="eyebrow">â˜…â˜…â˜…â˜…â˜†</div><p>â€œBlush pigment is unreal. A pinhead is genuinely enough for both cheeks.â€</p><small>Amara K. Â· Verified buyer</small></div>
+</div></div></section>
+
+<!-- GLOBAL FOOTER: business info and store policy -->
+<footer><div class="container">
+<div class="brand brand-sm">LumiÃ¨re<span>.</span></div>
+<p>Free delivery over R750 Â· 30-day returns Â· Cruelty-free</p>
+<p class="fine">Demo storefront â€” prices, accounts and checkout are illustrative only.</p>
+</div></footer>
+</body></html>
+
