@@ -1,50 +1,20 @@
-﻿<!doctype html>
-<html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Checkout â€” LumiÃ¨re Beauty</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css"></head><body>
-<!-- GLOBAL HEADER: brand, nav, and responsive mobile menu -->
-<header><div class="container nav">
-<input class="nav-toggle" type="checkbox" id="nav-toggle">
-<a class="brand" href="index.html">LumiÃ¨re<span>.</span></a>
-<label class="menu-toggle" for="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></label>
-<nav class="nav-links" id="nav-links" aria-label="Main"><a href="index.html">Home</a><a href="products.html">Shop</a><a href="deals.html">Deals</a><a href="about.html">About</a><a href="contact.html">Contact</a>
-<a href="login.html">Account</a>
-<a class="cart-btn" href="cart.html">Bag (<span data-count>0</span>)</a>
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Checkout — Lumière Beauty</title><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&amp;family=Jost:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/><link href="style.css" rel="stylesheet"/><meta content="Complete Lumière Beauty delivery details, apply a discount code and create a trackable demo order." name="description"/><meta content="makeup checkout, delivery, track order, Lumière Beauty South Africa" name="keywords"/></head><body>
+<!-- ST10533111 JODY'LEE GUMEDE | WEDE5020 Part 2 -->
+<header>
+<div class="container nav">
+<input class="nav-toggle" id="nav-toggle" type="checkbox"/>
+<a class="brand" href="index.html">Lumière<span>.</span></a>
+<label aria-label="Toggle menu" class="menu-toggle" for="nav-toggle"><span></span><span></span><span></span></label>
+<nav aria-label="Main" class="nav-links"><a href="index.html">Home</a><a href="products.html">Shop</a><a href="gallery.html">Gallery</a><a href="deals.html">Deals</a><a href="tracking.html">Track</a><a data-account-link="" href="account.html">Account</a><a href="wishlist.html">Wishlist</a>
+<details class="nav-more"><summary>More</summary><div class="nav-more-menu"><a href="reviews.html">Reviews</a><a href="enquiry.html">Enquiry</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="payment-methods.html">Payments</a><a href="terms.html">Terms</a><a href="references.html">References</a><a href="admin.html">Admin Demo</a></div></details>
+<a class="cart-btn" href="cart.html">Bag (<span data-count="">0</span>)</a>
 </nav></div></header>
-
-<!-- CHECKOUT PAGE: shipping form and order summary -->
-<section><div class="container"><div class="head"><div class="eyebrow">Almost there</div><h2>Checkout</h2></div>
-<div class="cart-wrap"><form class="form" id="checkout-form">
-<h3>Delivery details</h3>
-<div class="two"><label>First name<input required></label><label>Last name<input required></label></div>
-<label>Email<input type="email" required></label>
-<label>Phone<input type="tel" required></label>
-<label>Street address<input required></label>
-<div class="two"><label>City<input required></label><label>Postal code<input required></label></div>
-<h3>Payment</h3>
-<label>Card number<input required placeholder="4242 4242 4242 4242" inputmode="numeric"></label>
-<div class="two"><label>Expiry<input required placeholder="MM/YY"></label><label>CVV<input required placeholder="123" inputmode="numeric"></label></div>
-<label>Discount code<input id="code" placeholder="LUMIERE10"></label>
-<button class="btn btn-block" type="submit">Place order</button>
-<p class="fine-muted">Demo only â€” no payment is processed and no card details are stored or sent anywhere.</p>
-</form>
-<aside class="summary"><h3>Order summary</h3><div id="cart-lines" class="compact">
-  <div class="line"><img src="images/foudation-1.jpg" alt="Luminous Silk Foundation"><div><b>Luminous Silk Foundation</b><small>Foundation</small></div><span class="price">R549</span></div>
-  <div class="line"><img src="images/make-up-glam-1.jpg" alt="Petal Cream Blush"><div><b>Petal Cream Blush</b><small>Cheeks</small></div><span class="price">R259</span></div>
-</div>
-<div class="row"><span>Subtotal</span><span id="sub">R808</span></div>
-<div class="row"><span>Delivery</span><span id="ship">Free</span></div>
-<div class="row" id="disc-row"><span>Discount</span><span id="disc">-R80</span></div>
-<div class="row fw-500"><span>Total</span><span id="tot">R728</span></div>
-</aside></div></div></section>
-
-<!-- GLOBAL FOOTER -->
+<section><div class="container"><div class="head"><div class="eyebrow">Almost there</div><h2>Checkout</h2><p>Complete your delivery details. Your order will receive a trackable demo number.</p></div><div class="cart-wrap"><form class="form glam-form" id="checkout-form"><h3>Delivery details</h3><div class="two"><label>First name<input autocomplete="given-name" name="firstName" required=""/></label><label>Last name<input autocomplete="family-name" name="lastName" required=""/></label></div><label>Email<input autocomplete="email" name="email" required="" type="email"/></label><label>Phone<input autocomplete="tel" name="phone" pattern="[0-9+ ()-]{8,}" required="" type="tel"/></label><label>Street address<input autocomplete="street-address" name="street" required=""/></label><div class="two"><label>City<input autocomplete="address-level2" name="city" required=""/></label><label>Postal code<input autocomplete="postal-code" name="postal" pattern="[0-9A-Za-z -]{3,10}" required=""/></label></div><label>Province<select name="province" required=""><option value="">Select province</option><option>KwaZulu-Natal</option><option>Gauteng</option><option>Western Cape</option><option>Eastern Cape</option><option>Free State</option><option>Limpopo</option><option>Mpumalanga</option><option>North West</option><option>Northern Cape</option></select></label><h3>Payment method</h3><div class="payment-choice"><label><input checked="" name="payment" type="radio" value="card"/> Card (demo)</label><label><input name="payment" type="radio" value="eft"/> EFT (demo)</label></div><p class="payment-help fine-muted">Want to save a preferred method first? <a href="payment-methods.html">Manage payment methods →</a></p><label>Discount code<input id="code" name="code" placeholder="Try LUMIERE10"/></label><button class="btn btn-block" type="submit">Place order</button><p class="fine-muted">Demo only — no payment is processed and no card or banking details are requested.</p><div class="order-success" hidden="" id="order-result"></div></form><aside class="summary"><h3>Order summary</h3><div class="compact" id="cart-lines"></div><div class="row"><span>Subtotal</span><span id="sub">R0</span></div><div class="row"><span>Delivery</span><span id="ship">Free</span></div><div class="row" hidden="" id="disc-row"><span>Discount</span><span id="disc">-R0</span></div><div class="row fw-500"><span>Total</span><span id="tot">R0</span></div><div class="checkout-badges"><span>✓ Order ID</span><span>✓ Tracking map</span><span>✓ Saved history</span></div></aside></div></div></section>
 <footer><div class="container">
-<div class="brand brand-sm">LumiÃ¨re<span>.</span></div>
-<p>Free delivery over R750 Â· 30-day returns Â· Cruelty-free</p>
-<p class="fine">Demo storefront â€” prices, accounts and checkout are illustrative only.</p>
-</div></footer>
-</body></html>
-
+<div class="brand brand-sm">Lumière<span>.</span></div>
+<p>Free delivery over R750 · 30-day returns · Cruelty-free</p>
+<div class="footer-links"><a href="products.html">Shop</a><a href="gallery.html">Gallery</a><a href="reviews.html">Reviews</a><a href="enquiry.html">Enquiry</a><a href="tracking.html">Track order</a><a href="wishlist.html">Wishlist</a><a href="account.html">Account</a><a href="contact.html">Contact</a><a href="terms.html">Terms</a><a href="references.html">References</a></div>
+<p class="fine">Academic storefront prototype — no real payment or courier service is connected. ST10533111 JODY'LEE GUMEDE.</p>
+</div></footer><script defer="" src="products-data.js"></script><script defer="" src="app.js"></script></body></html>

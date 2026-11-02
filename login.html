@@ -1,34 +1,31 @@
-﻿<!doctype html>
-<html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Account â€” LumiÃ¨re Beauty</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css"></head><body>
-<!-- GLOBAL HEADER: navigation and account access -->
-<header><div class="container nav">
-<input class="nav-toggle" type="checkbox" id="nav-toggle">
-<a class="brand" href="index.html">LumiÃ¨re<span>.</span></a>
-<label class="menu-toggle" for="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></label>
-<nav class="nav-links" id="nav-links" aria-label="Main"><a href="index.html">Home</a><a href="products.html">Shop</a><a href="deals.html">Deals</a><a href="about.html">About</a><a href="contact.html">Contact</a>
-<a href="login.html" aria-current="page">Account</a>
-<a class="cart-btn" href="cart.html">Bag (<span data-count>0</span>)</a>
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Account — Lumière Beauty</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&amp;family=Jost:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/><meta content="Create a Lumière Beauty account, sign in, review order history and access delivery tracking." name="description"/><meta content="Lumière Beauty account, sign in, sign up, order history, track delivery" name="keywords"/></head><body><!-- ST10533111 JODY'LEE GUMEDE | WEDE5020 Part 2 -->
+<!-- GLOBAL HEADER | ST10533111 JODY'LEE GUMEDE -->
+<header>
+<div class="container nav">
+<input class="nav-toggle" id="nav-toggle" type="checkbox"/>
+<a class="brand" href="index.html">Lumière<span>.</span></a>
+<label aria-label="Toggle menu" class="menu-toggle" for="nav-toggle"><span></span><span></span><span></span></label>
+<nav aria-label="Main" class="nav-links"><a href="index.html">Home</a><a href="products.html">Shop</a><a href="gallery.html">Gallery</a><a href="deals.html">Deals</a><a href="tracking.html">Track</a><a aria-current="page" data-account-link="" href="account.html">Account</a><a href="wishlist.html">Wishlist</a>
+<details class="nav-more"><summary>More</summary><div class="nav-more-menu"><a href="reviews.html">Reviews</a><a href="enquiry.html">Enquiry</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="payment-methods.html">Payments</a><a href="terms.html">Terms</a><a href="references.html">References</a><a href="admin.html">Admin Demo</a></div></details>
+<a class="cart-btn" href="cart.html">Bag (<span data-count="">0</span>)</a>
 </nav></div></header>
-
-<!-- ACCOUNT PAGE: sign-in and sign-up tabs -->
-<section><div class="container narrow"><div class="head"><div class="eyebrow">Account</div><h2>Sign in or create an account</h2><p>Saved locally in your browser for this demo.</p></div>
-<div class="tabs"><button class="chip active" data-tab="signin">Sign in</button><button class="chip" data-tab="signup">Sign up</button></div>
-<form class="form" id="signin"><label>Email<input type="email" required></label><label>Password<input type="password" required></label>
-<button class="btn btn-block">Sign in</button></form>
-<form class="form" id="signup" hidden><label>Full name<input required></label><label>Email<input type="email" required></label>
-<label>Password<input type="password" required minlength="6"></label>
-<button class="btn btn-block">Create account</button></form>
-<p class="fine-muted text-center">This prototype stores accounts in browser localStorage, which is not secure. Never use a real password.</p>
+<section class="account-section"><div class="container narrow"><div class="head"><div class="eyebrow">Lumière Club</div><h2>Your beauty account</h2><p>Sign in to keep your demo orders together and track deliveries.</p></div>
+<div id="account-auth">
+<div class="tabs"><button class="chip active" data-tab="signin" type="button">Sign in</button><button class="chip" data-tab="signup" type="button">Create account</button></div>
+<form class="form glam-form" id="signin"><div class="form-icon">✦</div><h3>Welcome back</h3><label>Email address<input autocomplete="email" name="email" placeholder="you@example.com" required="" type="email"/></label><label>Password<input autocomplete="current-password" minlength="6" name="password" placeholder="Your password" required="" type="password"/></label><label class="check-row"><input name="remember" type="checkbox"/> Remember me on this device</label><button class="btn btn-block" type="submit">Sign in</button><p class="form-message" id="signin-message" role="status"></p><div class="login-tools"><a href="forgot-password.html">Forgot password?</a><a href="register.html">Create a separate account →</a></div></form>
+<form class="form glam-form" hidden="" id="signup"><div class="form-icon">✧</div><h3>Create your account</h3><label>Full name<input autocomplete="name" minlength="2" name="name" placeholder="Full name" required=""/></label><label>Email address<input autocomplete="email" name="email" placeholder="you@example.com" required="" type="email"/></label><label>Phone number<input autocomplete="tel" name="phone" pattern="[0-9+ ()-]{8,}" placeholder="+27 ..." required="" type="tel"/></label><label>Password<input autocomplete="new-password" minlength="8" name="password" placeholder="At least 8 characters" required="" type="password"/></label><label>Confirm password<input autocomplete="new-password" minlength="8" name="confirm" placeholder="Repeat password" required="" type="password"/></label><button class="btn btn-block" type="submit">Create account</button><p class="form-message" id="signup-message" role="status"></p></form>
+<p class="fine-muted text-center">Academic prototype: account data is stored only in this browser. Do not use a real password.</p></div>
+<div hidden="" id="account-dashboard"><div class="account-hero"><div><div class="eyebrow">Signed in</div><h2 id="account-name">Welcome</h2><p id="account-email"></p></div><button class="btn ghost" id="logout" type="button">Sign out</button></div><div class="dashboard-grid"><div class="dash-card"><span class="dash-icon">♡</span><h3>Member perks</h3><p>Free delivery over R750, easy order history and quick delivery tracking.</p><a href="products.html">Continue shopping →</a></div><div class="dash-card"><span class="dash-icon">⌖</span><h3>Track a delivery</h3><p>Use any order number from your order history to view progress and the delivery map.</p><a href="tracking.html">Open tracking →</a></div></div><div class="orders-panel"><div class="panel-title"><div><div class="eyebrow">Your orders</div><h3>Order history</h3></div></div><div id="account-orders"></div></div></div>
 </div></section>
-
-<!-- GLOBAL FOOTER -->
 <footer><div class="container">
-<div class="brand brand-sm">LumiÃ¨re<span>.</span></div>
-<p>Free delivery over R750 Â· 30-day returns Â· Cruelty-free</p>
-<p class="fine">Demo storefront â€” prices, accounts and checkout are illustrative only.</p>
+<div class="brand brand-sm">Lumière<span>.</span></div>
+<p>Free delivery over R750 · 30-day returns · Cruelty-free</p>
+<div class="footer-links"><a href="products.html">Shop</a><a href="gallery.html">Gallery</a><a href="reviews.html">Reviews</a><a href="enquiry.html">Enquiry</a><a href="tracking.html">Track order</a><a href="wishlist.html">Wishlist</a><a href="account.html">Account</a><a href="contact.html">Contact</a><a href="terms.html">Terms</a><a href="references.html">References</a></div>
+<p class="fine">Academic storefront prototype — no real payment or courier service is connected. ST10533111 JODY'LEE GUMEDE.</p>
 </div></footer>
-</body></html>
+<script defer="" src="products-data.js"></script><script defer="" src="app.js"></script></body></html>

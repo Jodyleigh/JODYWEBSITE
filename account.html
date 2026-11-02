@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Account — Lumière Beauty</title>
+<meta content="View your Lumière Beauty profile, wishlist, order history and delivery tracking." name="description"/><meta content="beauty account, order history, wishlist, track delivery" name="keywords"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&amp;family=Jost:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/></head><body>
+<!-- ST10533111 JODY'LEE GUMEDE | WEDE5020 Part 2 -->
+<header>
+<div class="container nav">
+<input class="nav-toggle" id="nav-toggle" type="checkbox"/>
+<a class="brand" href="index.html">Lumière<span>.</span></a>
+<label aria-label="Toggle menu" class="menu-toggle" for="nav-toggle"><span></span><span></span><span></span></label>
+<nav aria-label="Main" class="nav-links"><a href="index.html">Home</a><a href="products.html">Shop</a><a href="gallery.html">Gallery</a><a href="deals.html">Deals</a><a href="tracking.html">Track</a><a aria-current="page" data-account-link="" href="account.html">Account</a><a href="wishlist.html">Wishlist</a>
+<details class="nav-more"><summary>More</summary><div class="nav-more-menu"><a href="reviews.html">Reviews</a><a href="enquiry.html">Enquiry</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="payment-methods.html">Payments</a><a href="terms.html">Terms</a><a href="references.html">References</a><a href="admin.html">Admin Demo</a></div></details>
+<a class="cart-btn" href="cart.html">Bag (<span data-count="">0</span>)</a>
+</nav></div></header>
+<section class="account-section"><div class="container"><div class="head"><div class="eyebrow">Lumière Club</div><h2>My Account</h2><p>Your beauty profile, favourites, orders and delivery journey in one place.</p></div>
+<div class="guest-gate" id="account-guest"><span class="form-icon">✦</span><h3>Sign in to your account</h3><p>Your saved orders and account details are stored in this browser.</p><div class="success-actions"><a class="btn" href="login.html">Sign in</a><a class="btn ghost" href="register.html">Create account</a></div></div>
+<div hidden="" id="account-dashboard"><div class="account-hero"><div><div class="eyebrow">Signed in</div><h2 id="account-name">Hello</h2><p id="account-email"></p></div><button class="btn ghost" id="account-logout" type="button">Sign out</button></div>
+<div class="app-stats"><div><span>Orders</span><b id="account-order-count">0</b></div><div><span>Wishlist</span><b id="account-wishlist-count">0</b></div><div><span>Phone</span><b class="small-stat" id="account-phone">—</b></div></div>
+<div class="dashboard-grid"><div class="dash-card"><span class="dash-icon">♡</span><h3>Wishlist</h3><p>Keep favourite products ready for your next beauty bag.</p><a href="wishlist.html">Open wishlist →</a></div><div class="dash-card"><span class="dash-icon">⌖</span><h3>Delivery tracking</h3><p>Follow every order stage and view the delivery destination map.</p><a href="tracking.html">Track an order →</a></div><div class="dash-card"><span class="dash-icon">★</span><h3>Reviews</h3><p>Share feedback about the shopping experience.</p><a href="reviews.html">Write a review →</a></div><div class="dash-card"><span class="dash-icon">✦</span><h3>Payment preference</h3><p>Save a demo payment preference for checkout.</p><a href="payment-methods.html">Manage payments →</a></div></div>
+<div class="orders-panel"><div class="panel-title"><div><div class="eyebrow">Your orders</div><h3>Order history</h3></div></div><div id="account-orders"></div></div><div class="orders-panel notification-panel"><div class="panel-title"><div><div class="eyebrow">Updates</div><h3>Notifications</h3></div></div><div id="notification-list"></div></div></div></div></section>
+<footer><div class="container">
+<div class="brand brand-sm">Lumière<span>.</span></div>
+<p>Free delivery over R750 · 30-day returns · Cruelty-free</p>
+<div class="footer-links"><a href="products.html">Shop</a><a href="gallery.html">Gallery</a><a href="reviews.html">Reviews</a><a href="enquiry.html">Enquiry</a><a href="tracking.html">Track order</a><a href="wishlist.html">Wishlist</a><a href="account.html">Account</a><a href="contact.html">Contact</a><a href="terms.html">Terms</a><a href="references.html">References</a></div>
+<p class="fine">Academic storefront prototype — no real payment or courier service is connected. ST10533111 JODY'LEE GUMEDE.</p>
+</div></footer>
+<script defer="" src="products-data.js"></script><script defer="" src="app.js"></script></body></html>

@@ -1,34 +1,40 @@
-﻿<!doctype html>
-<html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Contact â€” LumiÃ¨re Beauty</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css"></head><body>
-<!-- GLOBAL HEADER: main navigation and menu control -->
-<header><div class="container nav">
-<input class="nav-toggle" type="checkbox" id="nav-toggle">
-<a class="brand" href="index.html">LumiÃ¨re<span>.</span></a>
-<label class="menu-toggle" for="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></label>
-<nav class="nav-links" id="nav-links" aria-label="Main"><a href="index.html">Home</a><a href="products.html">Shop</a><a href="deals.html">Deals</a><a href="about.html">About</a><a href="contact.html" aria-current="page">Contact</a>
-<a href="login.html">Account</a>
-<a class="cart-btn" href="cart.html">Bag (<span data-count>0</span>)</a>
-</nav></div></header>
+<!DOCTYPE html>
 
+<html lang="en"><head><meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Contact — Lumière Beauty</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&amp;family=Jost:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/><meta content="Contact Lumière Beauty for order enquiries, shade matching, returns and support using a validated enquiry form." name="description"/>
+<meta content="contact Lumière Beauty, order enquiry, shade matching, returns, beauty support" name="keywords"/>
+</head><body>
+<!-- ST10533111 JODY'LEE GUMEDE | WEDE5020 Part 2 -->
+<!-- GLOBAL HEADER: main navigation and menu control -->
+<header>
+<div class="container nav">
+<input class="nav-toggle" id="nav-toggle" type="checkbox"/>
+<a class="brand" href="index.html">Lumière<span>.</span></a>
+<label aria-label="Toggle menu" class="menu-toggle" for="nav-toggle"><span></span><span></span><span></span></label>
+<nav aria-label="Main" class="nav-links"><a href="index.html">Home</a><a href="products.html">Shop</a><a href="gallery.html">Gallery</a><a href="deals.html">Deals</a><a href="tracking.html">Track</a><a data-account-link="" href="account.html">Account</a><a href="wishlist.html">Wishlist</a>
+<details class="nav-more"><summary>More</summary><div class="nav-more-menu"><a href="reviews.html">Reviews</a><a href="enquiry.html">Enquiry</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="payment-methods.html">Payments</a><a href="terms.html">Terms</a><a href="references.html">References</a><a href="admin.html">Admin Demo</a></div></details>
+<a class="cart-btn" href="cart.html">Bag (<span data-count="">0</span>)</a>
+</nav></div></header>
 <!-- CONTACT FORM AND SUPPORT DETAILS -->
 <section><div class="container narrow"><div class="head"><div class="eyebrow">Say hello</div><h2>Contact Us</h2><p>We reply to every message within one working day.</p></div>
-<form class="form" id="contact-form">
-<div class="two"><label>Name<input required></label><label>Email<input type="email" required></label></div>
-<label>Subject<select><option>Order enquiry</option><option>Shade matching help</option><option>Returns</option><option>Wholesale</option><option>Something else</option></select></label>
-<label>Message<textarea rows="5" required></textarea></label>
-<button class="btn btn-block">Send message</button></form>
+<form class="form" data-netlify="true" id="contact-form" method="POST" name="contact" netlify-honeypot="bot-field"><input name="form-name" type="hidden" value="contact"/><p class="sr-only"><label>Do not fill this out: <input name="bot-field"/></label></p>
+<div class="two"><label>Name<input name="name" required=""/></label><label>Email<input name="email" required="" type="email"/></label></div>
+<label>Subject<select name="subject"><option>Order enquiry</option><option>Shade matching help</option><option>Returns</option><option>Wholesale</option><option>Something else</option></select></label>
+<label>Message<textarea name="message" required="" rows="5"></textarea></label>
+<label>Order number (optional)<input name="orderNumber" pattern="LB-[0-9]{8}" placeholder="LB-12345678"/></label><fieldset class="contact-choice"><legend>Preferred reply</legend><label><input checked="" name="reply" type="radio" value="email"/> Email</label><label><input name="reply" type="radio" value="phone"/> Phone</label></fieldset><label class="check-row"><input name="consent" required="" type="checkbox"/> I agree that these details may be used to respond to my enquiry.</label><p class="form-message" id="contact-message" role="status"></p><button class="btn btn-block">Send message</button></form>
 <div class="info"><div><b>Email</b><p>hello@lumiere.demo</p></div><div><b>Phone</b><p>+27 31 000 0000</p></div>
-<div><b>Studio</b><p>14 Florida Road, Morningside, Durban</p></div><div><b>Hours</b><p>Monâ€“Fri 9:00â€“17:00 SAST</p></div></div>
-</div></section>
-
+<div><b>Studio</b><p>14 Florida Road, Morningside, Durban</p></div><div><b>Hours</b><p>Mon–Fri 9:00–17:00 SAST</p></div></div>
+<div class="contact-map-card"><div class="map-head"><div><div class="eyebrow">Visit / dispatch area</div><h3>Durban, KwaZulu-Natal</h3></div><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=14+Florida+Road+Morningside+Durban" rel="noopener" target="_blank">Open map</a></div><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=14%20Florida%20Road%20Morningside%20Durban&amp;output=embed" title="Lumière Beauty studio map"></iframe></div></div></section>
 <!-- GLOBAL FOOTER -->
 <footer><div class="container">
-<div class="brand brand-sm">LumiÃ¨re<span>.</span></div>
-<p>Free delivery over R750 Â· 30-day returns Â· Cruelty-free</p>
-<p class="fine">Demo storefront â€” prices, accounts and checkout are illustrative only.</p>
+<div class="brand brand-sm">Lumière<span>.</span></div>
+<p>Free delivery over R750 · 30-day returns · Cruelty-free</p>
+<div class="footer-links"><a href="products.html">Shop</a><a href="gallery.html">Gallery</a><a href="reviews.html">Reviews</a><a href="enquiry.html">Enquiry</a><a href="tracking.html">Track order</a><a href="wishlist.html">Wishlist</a><a href="account.html">Account</a><a href="contact.html">Contact</a><a href="terms.html">Terms</a><a href="references.html">References</a></div>
+<p class="fine">Academic storefront prototype — no real payment or courier service is connected. ST10533111 JODY'LEE GUMEDE.</p>
 </div></footer>
+<script defer="" src="products-data.js"></script>
+<script defer="" src="app.js"></script>
 </body></html>
