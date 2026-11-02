@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Admin Demo — Lumière Beauty</title>
+<meta content="View local prototype orders, users, enquiries and update delivery statuses for assessment." name="description"/><meta content="admin dashboard, order management, delivery status, academic prototype" name="keywords"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&amp;family=Jost:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/></head><body>
+<!-- ST10533111 JODY'LEE GUMEDE | WEDE5020 Part 2 -->
+<header>
+<div class="container nav">
+<input class="nav-toggle" id="nav-toggle" type="checkbox"/>
+<a class="brand" href="index.html">Lumière<span>.</span></a>
+<label aria-label="Toggle menu" class="menu-toggle" for="nav-toggle"><span></span><span></span><span></span></label>
+<nav aria-label="Main" class="nav-links"><a href="index.html">Home</a><a href="products.html">Shop</a><a href="gallery.html">Gallery</a><a href="deals.html">Deals</a><a href="tracking.html">Track</a><a data-account-link="" href="account.html">Account</a><a href="wishlist.html">Wishlist</a>
+<details class="nav-more"><summary>More</summary><div class="nav-more-menu"><a href="reviews.html">Reviews</a><a href="enquiry.html">Enquiry</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="payment-methods.html">Payments</a><a href="terms.html">Terms</a><a href="references.html">References</a><a href="admin.html">Admin Demo</a></div></details>
+<a class="cart-btn" href="cart.html">Bag (<span data-count="">0</span>)</a>
+</nav></div></header>
+<section><div class="container" id="admin-app"><div class="head"><div class="eyebrow">Assessment console</div><h2>Admin Demo</h2><p>A local-only dashboard for demonstrating dynamic order and delivery management.</p></div><div class="app-stats"><div><span>Orders</span><b id="admin-orders-count">0</b></div><div><span>Users</span><b id="admin-users-count">0</b></div><div><span>Enquiries</span><b id="admin-enquiries-count">0</b></div><div><span>Reviews</span><b id="admin-reviews-count">0</b></div></div><div class="admin-panel"><div class="panel-title"><div><div class="eyebrow">Order management</div><h3>Delivery statuses</h3></div><button class="btn ghost" id="admin-refresh" type="button">Refresh</button></div><div class="table-scroll"><table class="admin-table"><thead><tr><th>Order</th><th>Customer</th><th>Total</th><th>Status</th><th>Action</th></tr></thead><tbody id="admin-orders"></tbody></table></div><p class="fine-muted">This page manages only data stored in the current browser. It is included to demonstrate dynamic content and order administration.</p></div></div></section>
+<footer><div class="container">
+<div class="brand brand-sm">Lumière<span>.</span></div>
+<p>Free delivery over R750 · 30-day returns · Cruelty-free</p>
+<div class="footer-links"><a href="products.html">Shop</a><a href="gallery.html">Gallery</a><a href="reviews.html">Reviews</a><a href="enquiry.html">Enquiry</a><a href="tracking.html">Track order</a><a href="wishlist.html">Wishlist</a><a href="account.html">Account</a><a href="contact.html">Contact</a><a href="terms.html">Terms</a><a href="references.html">References</a></div>
+<p class="fine">Academic storefront prototype — no real payment or courier service is connected. ST10533111 JODY'LEE GUMEDE.</p>
+</div></footer>
+<script defer="" src="products-data.js"></script><script defer="" src="app.js"></script></body></html>

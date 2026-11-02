@@ -1,33 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Glam by Jody - makeup, beauty products and beauty services.">
-<title>Gallery - Glam by Jody</title>
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<header><h1>Glam by Jody</h1></header>
-<nav><ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="products.html">Products</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="gallery.html" class="active">Gallery</a></li>
-<li><a href="reviews.html">Reviews</a></li>
-<li><a href="sales.html">Sales</a></li>
-<li><a href="orders.html">Orders</a></li>
-<li><a href="checkout.html">Checkout (<span class="cart-count">0</span>)</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul></nav>
-<main><h2>Glam Gallery</h2>
-<div class="gallery-grid">
-<div class="gallery-card"><img src="pic/bridal make up look.jpg"><p>Bridal Glam</p></div>
-<div class="gallery-card"><img src="pic/Makeup.jpg"><p>Event Makeup</p></div>
-<div class="gallery-card"><img src="pic/Frontal ponytail.jpg"><p>Hair Styling</p></div>
-</div></main>
-<footer><p>&copy; 2026 Glam by Jody. All rights reserved.</p></footer>
-<script src="js/script.js"></script>
-</body>
-</html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Gallery — Lumière Beauty</title>
+<meta content="Explore a glossy interactive Lumière Beauty makeup gallery with an accessible lightbox." name="description"/><meta content="makeup gallery, glam looks, beauty inspiration, lightbox gallery" name="keywords"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&amp;family=Jost:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/></head><body>
+<!-- ST10533111 JODY'LEE GUMEDE | WEDE5020 Part 2 -->
+<header>
+<div class="container nav">
+<input class="nav-toggle" id="nav-toggle" type="checkbox"/>
+<a class="brand" href="index.html">Lumière<span>.</span></a>
+<label aria-label="Toggle menu" class="menu-toggle" for="nav-toggle"><span></span><span></span><span></span></label>
+<nav aria-label="Main" class="nav-links"><a href="index.html">Home</a><a href="products.html">Shop</a><a aria-current="page" href="gallery.html">Gallery</a><a href="deals.html">Deals</a><a href="tracking.html">Track</a><a data-account-link="" href="account.html">Account</a><a href="wishlist.html">Wishlist</a>
+<details class="nav-more"><summary>More</summary><div class="nav-more-menu"><a href="reviews.html">Reviews</a><a href="enquiry.html">Enquiry</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="payment-methods.html">Payments</a><a href="terms.html">Terms</a><a href="references.html">References</a><a href="admin.html">Admin Demo</a></div></details>
+<a class="cart-btn" href="cart.html">Bag (<span data-count="">0</span>)</a>
+</nav></div></header>
+<section class="gallery-showcase-section">
+  <div class="container gallery-showcase-head">
+    <div class="eyebrow">The moving glam edit</div>
+    <h1>Beauty in Motion</h1>
+    <p>Inspired by the luxury product movement in your reference video. Use the arrows, dots, keyboard or swipe to move through the collection. Select the centre product to enlarge it.</p>
+  </div>
+
+  <div class="gallery-cinema" data-gallery-showcase aria-roledescription="carousel" aria-label="Lumière Beauty moving product gallery">
+    <div class="gallery-ambient" aria-hidden="true"></div>
+    <div class="gallery-stage">
+      <figure class="showcase-card is-active" data-showcase-card>
+        <button class="showcase-media" type="button" aria-label="View Luminous Silk Foundation">
+          <img src="images/foundation-1.jpg" alt="Luminous Silk Foundation collection" decoding="async" fetchpriority="high"/>
+        </button>
+        <figcaption><span>01 · Foundation</span><strong>Luminous Silk</strong><small>Soft-focus glow · R549</small></figcaption>
+      </figure>
+      <figure class="showcase-card" data-showcase-card>
+        <button class="showcase-media" type="button" aria-label="View Radiant Skin Tint">
+          <img src="images/foundation-7.jpg" alt="Radiant Skin Tint" decoding="async" loading="lazy"/>
+        </button>
+        <figcaption><span>02 · Foundation</span><strong>Radiant Skin Tint</strong><small>Lightweight radiance · R429</small></figcaption>
+      </figure>
+      <figure class="showcase-card" data-showcase-card>
+        <button class="showcase-media" type="button" aria-label="View Soft Focus Loose Powder">
+          <img src="images/setting-spray-and-primer-1.jpg" alt="Soft Focus Loose Powder beauty product" decoding="async" loading="lazy"/>
+        </button>
+        <figcaption><span>03 · Powder</span><strong>Soft Focus</strong><small>Velvet finish · R389</small></figcaption>
+      </figure>
+      <figure class="showcase-card" data-showcase-card>
+        <button class="showcase-media" type="button" aria-label="View Velvet Blur Pressed Powder">
+          <img src="images/setting-spray-and-primer-2.jpg" alt="Velvet Blur Pressed Powder products" decoding="async" loading="lazy"/>
+        </button>
+        <figcaption><span>04 · Powder</span><strong>Velvet Blur</strong><small>Smooth + set · R299</small></figcaption>
+      </figure>
+      <figure class="showcase-card" data-showcase-card>
+        <button class="showcase-media" type="button" aria-label="View Matte Lip Combo Set">
+          <img src="images/lip-combos-2.jpg" alt="Matte Lip Combo Set" decoding="async" loading="lazy"/>
+        </button>
+        <figcaption><span>05 · Lips</span><strong>Matte Lip Edit</strong><small>Define + layer · R349</small></figcaption>
+      </figure>
+      <figure class="showcase-card" data-showcase-card>
+        <button class="showcase-media" type="button" aria-label="View Glossy Nude Lip Duo">
+          <img src="images/lip-combos-3.jpg" alt="Glossy Nude Lip Duo" decoding="async" loading="lazy"/>
+        </button>
+        <figcaption><span>06 · Lips</span><strong>Glossy Nude Duo</strong><small>High-shine colour · R289</small></figcaption>
+      </figure>
+      <figure class="showcase-card" data-showcase-card>
+        <button class="showcase-media" type="button" aria-label="View Nine-Pan Neutral Palette">
+          <img src="images/lip-combos-9.jpg" alt="Nine-Pan Neutral Palette" decoding="async" loading="lazy"/>
+        </button>
+        <figcaption><span>07 · Eyes</span><strong>Neutral Palette</strong><small>Everyday colour · R589</small></figcaption>
+      </figure>
+      <figure class="showcase-card" data-showcase-card>
+        <button class="showcase-media" type="button" aria-label="View Precision Brush Set">
+          <img src="images/brushes-1.jpg" alt="Precision makeup brush set" decoding="async" loading="lazy"/>
+        </button>
+        <figcaption><span>08 · Tools</span><strong>Precision Brushes</strong><small>Blend + sculpt · R900</small></figcaption>
+      </figure>
+    </div>
+
+    <button class="showcase-arrow showcase-prev" type="button" data-showcase-prev aria-label="Previous product">‹</button>
+    <button class="showcase-arrow showcase-next" type="button" data-showcase-next aria-label="Next product">›</button>
+    <div class="showcase-dots" data-showcase-dots aria-label="Choose a product"></div>
+    <div class="showcase-progress" aria-hidden="true"><span data-showcase-progress></span></div>
+    <p class="showcase-hint"><span>Drag / swipe</span><span>← → keys</span><span>Hover to pause</span></p>
+  </div>
+</section>
+
+<section class="gallery-note-section">
+  <div class="container gallery-note-card">
+    <span class="gallery-note-spark" aria-hidden="true">✦</span>
+    <div><div class="eyebrow">Interactive gallery</div><h2>Move. Focus. Explore.</h2><p>The centred product receives the strongest light and scale, while neighbouring products glide in perspective for the luxury campaign effect shown in your video.</p></div>
+    <a class="btn" href="products.html">Shop the collection</a>
+  </div>
+</section>
+<footer><div class="container">
+<div class="brand brand-sm">Lumière<span>.</span></div>
+<p>Free delivery over R750 · 30-day returns · Cruelty-free</p>
+<div class="footer-links"><a href="products.html">Shop</a><a href="gallery.html">Gallery</a><a href="reviews.html">Reviews</a><a href="enquiry.html">Enquiry</a><a href="tracking.html">Track order</a><a href="wishlist.html">Wishlist</a><a href="account.html">Account</a><a href="contact.html">Contact</a><a href="terms.html">Terms</a><a href="references.html">References</a></div>
+<p class="fine">Academic storefront prototype — no real payment or courier service is connected. ST10533111 JODY'LEE GUMEDE.</p>
+</div></footer>
+<script defer="" src="products-data.js"></script><script defer="" src="app.js"></script></body></html>

@@ -1,32 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Glam by Jody - makeup, beauty products and beauty services.">
-<title>Reviews - Glam by Jody</title>
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<header><h1>Glam by Jody</h1></header>
-<nav><ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="products.html">Products</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="gallery.html">Gallery</a></li>
-<li><a href="reviews.html" class="active">Reviews</a></li>
-<li><a href="sales.html">Sales</a></li>
-<li><a href="orders.html">Orders</a></li>
-<li><a href="checkout.html">Checkout (<span class="cart-count">0</span>)</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul></nav>
-<main><h2>Customer Reviews</h2>
-<div class="review-card"><p>⭐⭐⭐⭐⭐ "Jody'lee did my wedding makeup. I felt like a queen!" - Thando</p></div>
-<div class="review-card"><p>⭐⭐⭐⭐⭐ "Best facial treatment ever. My skin is glowing." - Lihle</p></div>
-<div class="review-card"><p>⭐⭐⭐⭐⭐ "Love the products! The lipstick lasts all day." - Sam</p></div>
-</main>
-<footer><p>&copy; 2026 Glam by Jody. All rights reserved.</p></footer>
-<script src="js/script.js"></script>
-</body>
-</html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Reviews — Lumière Beauty</title>
+<meta content="Read and submit customer reviews for the Lumière Beauty academic storefront." name="description"/><meta content="beauty reviews, makeup reviews, customer feedback" name="keywords"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&amp;family=Jost:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/></head><body>
+<!-- ST10533111 JODY'LEE GUMEDE | WEDE5020 Part 2 -->
+<header>
+<div class="container nav">
+<input class="nav-toggle" id="nav-toggle" type="checkbox"/>
+<a class="brand" href="index.html">Lumière<span>.</span></a>
+<label aria-label="Toggle menu" class="menu-toggle" for="nav-toggle"><span></span><span></span><span></span></label>
+<nav aria-label="Main" class="nav-links"><a href="index.html">Home</a><a href="products.html">Shop</a><a href="gallery.html">Gallery</a><a href="deals.html">Deals</a><a href="tracking.html">Track</a><a data-account-link="" href="account.html">Account</a><a href="wishlist.html">Wishlist</a>
+<details class="nav-more"><summary>More</summary><div class="nav-more-menu"><a href="reviews.html">Reviews</a><a href="enquiry.html">Enquiry</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="payment-methods.html">Payments</a><a href="terms.html">Terms</a><a href="references.html">References</a><a href="admin.html">Admin Demo</a></div></details>
+<a class="cart-btn" href="cart.html">Bag (<span data-count="">0</span>)</a>
+</nav></div></header>
+<section><div class="container"><div class="head"><div class="eyebrow">Glow stories</div><h2>Customer Reviews</h2><p>Share your experience and see what other beauty lovers say.</p></div><div class="reviews-layout"><div class="reviews-list" id="reviews-list"></div><form class="form glam-form" id="review-form"><h3>Leave a review</h3><label>Your name<input minlength="2" name="name" required=""/></label><label>Rating<select name="rating" required=""><option value="">Choose rating</option><option value="5">5 — Excellent</option><option value="4">4 — Very good</option><option value="3">3 — Good</option><option value="2">2 — Fair</option><option value="1">1 — Needs work</option></select></label><label>Review title<input minlength="3" name="title" required=""/></label><label>Your review<textarea minlength="10" name="message" required="" rows="5"></textarea></label><button class="btn btn-block" type="submit">Publish review</button><p class="form-message" id="review-message" role="status"></p></form></div></div></section>
+<footer><div class="container">
+<div class="brand brand-sm">Lumière<span>.</span></div>
+<p>Free delivery over R750 · 30-day returns · Cruelty-free</p>
+<div class="footer-links"><a href="products.html">Shop</a><a href="gallery.html">Gallery</a><a href="reviews.html">Reviews</a><a href="enquiry.html">Enquiry</a><a href="tracking.html">Track order</a><a href="wishlist.html">Wishlist</a><a href="account.html">Account</a><a href="contact.html">Contact</a><a href="terms.html">Terms</a><a href="references.html">References</a></div>
+<p class="fine">Academic storefront prototype — no real payment or courier service is connected. ST10533111 JODY'LEE GUMEDE.</p>
+</div></footer>
+<script defer="" src="products-data.js"></script><script defer="" src="app.js"></script></body></html>
